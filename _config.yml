@@ -1,0 +1,10 @@
+# Site settings
+title: Stubbed Cassandra
+email: christopher.batey@gmail.com
+description: "Stubbed Cassandra" 
+baseurl: ""
+url: "http://scassandra.org/"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
