@@ -17,8 +17,12 @@ It is separated into two components:
 * [Scassandra Server](/scassandra-server): Stubbed Scassandra server. Implemented in Scala, can be run as a standalone server or depended on via the Java client. Doesn't have an embedded Cassandra, is a standalone implementation of the server side of the Cassandra native protocol. You can prime the server to return rows, read timeout and write timeout via a REST API.
 * [Java Client](/java-client): Java client for Scassandra. A thin Java wrapper around Scassandra that allows Java projects to depend on Scassandra via maven dependency and have a programmatic interface for starting/stopping and priming.
 
-The first version of Scassandra, v0.1, is aimed at Java developers so most of the information is on the Java Client section of the website.
+The first versions of Scassandra, currently v0.2.0, is aimed at Java developers so most of the information is on the Java Client section of the website.
 The next version will focus on running Scassandra standalone.
+
+###Features v0.2.0
+* Lists and sets of the character types: varchar, ascii and text
+* JUnit rule for Java Client
 
 ###Features v0.1:
 * Priming of queries with columns of all the primitive types (no suport for collections/custom tyes).
