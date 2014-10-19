@@ -20,6 +20,10 @@ It is separated into two components:
 The first versions of Scassandra, currently v0.2.0, is aimed at Java developers so most of the information is on the Java Client section of the website.
 The next version will focus on running Scassandra standalone.
 
+###Features v0.3.0
+* Text map maps support: varchar, ascii and text
+* Can use a queryPattern rather than a query for priming, making knowing the exact query the application will execute no longer necessary
+
 ###Features v0.2.0
 * Lists and sets of the character types: varchar, ascii and text
 * JUnit rule for Java Client
@@ -36,8 +40,8 @@ The next version will focus on running Scassandra standalone.
 
 
 ###Current limitations:
-* Only tested with Java Datastax driver version 2 and above. Support for version 1 will come later. Other drivers will be tested and supported soon.
-* Collections aren't supported.
+* Does not work with version 2.1 of the Datastax java driver, only tested with version 1.0.* and 2.0.*
+* Collections that aren't of type text are not supported
 * Custom types aren't supported.
 * Binary protocol only. No planned support for thrift.
 
