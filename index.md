@@ -34,6 +34,10 @@ The next version will focus on running Scassandra standalone.
 * Retrieval of a list of all recorded queries.
 * Retrieval of a list of all the recorded executed prepared statements. If the prepared statement has been primed then the variable values are also visible.
 
+###Features: v0.4.0 - Not released yet
+* Support adding a fixed delay to both queries and prepared statements
+* Cassandra 2.1 support
+
 ###Feature backlog:
 * Retrieval of a list of all prepared statements even if they haven't been executed.
 * Priming of tables rather than queries. Currently Scassandra does not parse the query and compares an executed query with all the primes query field. This would be very useful for priming the system keyspace as certain drivers expect the same thing to be in system.local but do slightly different queries to retireve it.
