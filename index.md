@@ -23,6 +23,7 @@ The next version will focus on running Scassandra standalone.
 ###Features v0.3.0
 * Text map maps support: varchar, ascii and text
 * Can use a queryPattern rather than a query for priming, making knowing the exact query the application will execute no longer necessary
+* [Bug #49] QueryPattern for prepared statements for error scenarios do not work
 
 ###Features v0.2.0
 * Lists and sets of the character types: varchar, ascii and text
@@ -35,8 +36,9 @@ The next version will focus on running Scassandra standalone.
 * Retrieval of a list of all the recorded executed prepared statements. If the prepared statement has been primed then the variable values are also visible.
 
 ###Features: v0.4.0 - Not released yet
-* Support adding a fixed delay to both queries and prepared statements
-* Cassandra 2.1 support
+* [Feature #50] Support adding a fixed delay to both queries and prepared statements
+* [Feature #52] Cassandra 2.1 support
+* [Feature #53] JUnit matchers for queries and prepared statements
 
 ###Feature backlog:
 * Retrieval of a list of all prepared statements even if they haven't been executed.
