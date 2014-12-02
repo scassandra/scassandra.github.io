@@ -20,6 +20,11 @@ It is separated into two components:
 The first versions of Scassandra, currently v0.3.0, is aimed at Java developers so most of the information is on the Java Client section of the website.
 The next version will focus on running Scassandra standalone.
 
+###Release v0.4.1
+* [Feature #50] Support adding a fixed delay to both queries and prepared statements
+* [Feature #52] Cassandra 2.1 support
+* [Feature #53] JUnit matchers for queries and prepared statements
+
 ###Release v0.3.0
 * Text map maps support: varchar, ascii and text
 * Can use a queryPattern rather than a query for priming, making knowing the exact query the application will execute no longer necessary
@@ -34,21 +39,18 @@ The next version will focus on running Scassandra standalone.
 * Priming of prepared statements. The variable (?s) types and response types can be any of the primitive types.
 * Retrieval of a list of all recorded queries.
 * Retrieval of a list of all the recorded executed prepared statements. If the prepared statement has been primed then the variable values are also visible.
-
-###Release v0.4.0 - Not released yet
-* [Feature #50] Support adding a fixed delay to both queries and prepared statements
-* [Feature #52] Cassandra 2.1 support
-* [Feature #53] JUnit matchers for queries and prepared statements
+ 
+###Unreleased v0.5.0: 
+* Support for lists and sets of any type
 
 ###Feature backlog:
 * Retrieval of a list of all prepared statements even if they haven't been executed.
+* Priming UDTs
+* Collections with a types other than text, ascii and varchar
 * Priming of tables rather than queries. Currently Scassandra does not parse the query and compares an executed query with all the primes query field. This would be very useful for priming the system keyspace as certain drivers expect the same thing to be in system.local but do slightly different queries to retireve it.
 
 
 ###Current limitations:
-* Does not work with version 2.1 of the Datastax java driver, only tested with version 1.0.* and 2.0.*
-* Collections that aren't of type text are not supported
-* Custom types aren't supported.
 * Binary protocol only. No planned support for thrift.
 
 For feature requests and bug reports send an email to: Christopher.batey@gmail.com
