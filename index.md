@@ -21,7 +21,7 @@ The pre 1.0 release of Scassandra, currently v0.5.0, is aimed at Java developers
 The next version will focus on running Scassandra standalone.
 
  
-###Released v0.5.0: 
+###Release v0.5.0: 
 * Support for lists and sets of any type
 * Prepared statement matcher that handles matching the varialbe list correctly
 
