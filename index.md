@@ -17,8 +17,13 @@ It is separated into two components:
 * [Java Client](/java-client): Java client for Scassandra. A thin Java wrapper around Scassandra that allows Java projects to depend on Scassandra via maven dependency and have a programmatic interface for starting/stopping and priming.
 * [Scassandra Server](/scassandra-server): Stubbed Scassandra server. Only go here if you're insterested in running Stubbed Cassandra without a build tool such as maven or gradle. Implemented in Scala, can be run as a standalone server or depended on via the Java client. Doesn't have an embedded Cassandra, is a standalone implementation of the server side of the Cassandra native protocol. You can prime the server to return rows, read timeout and write timeout via a REST API.
 
-The first versions of Scassandra, currently v0.4.1, is aimed at Java developers so most of the information is on the Java Client section of the website.
+The pre 1.0 release of Scassandra, currently v0.5.0, is aimed at Java developers so most of the information is on the Java Client section of the website.
 The next version will focus on running Scassandra standalone.
+
+ 
+###Released v0.5.0: 
+* Support for lists and sets of any type
+* Prepared statement matcher that handles matching the varialbe list correctly
 
 ###Release v0.4.1
 * [Feature #50] Support adding a fixed delay to both queries and prepared statements
@@ -39,9 +44,6 @@ The next version will focus on running Scassandra standalone.
 * Priming of prepared statements. The variable (?s) types and response types can be any of the primitive types.
 * Retrieval of a list of all recorded queries.
 * Retrieval of a list of all the recorded executed prepared statements. If the prepared statement has been primed then the variable values are also visible.
- 
-###Unreleased v0.5.0: 
-* Support for lists and sets of any type
 
 ###Feature backlog:
 * Retrieval of a list of all prepared statements even if they haven't been executed.
