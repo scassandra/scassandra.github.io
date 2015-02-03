@@ -17,9 +17,13 @@ It is separated into two components:
 * [Java Client](/java-client): Java client for Scassandra. A thin Java wrapper around Scassandra that allows Java projects to depend on Scassandra via maven dependency and have a programmatic interface for starting/stopping and priming.
 * [Scassandra Server](/scassandra-server): Stubbed Scassandra server. Only go here if you're insterested in running Stubbed Cassandra without a build tool such as maven or gradle. Implemented in Scala, can be run as a standalone server or depended on via the Java client. Doesn't have an embedded Cassandra, is a standalone implementation of the server side of the Cassandra native protocol. You can prime the server to return rows, read timeout and write timeout via a REST API.
 
-The pre 1.0 release of Scassandra, currently v0.5.0, is aimed at Java developers so most of the information is on the Java Client section of the website.
+The pre 1.0 release of Scassandra, currently v0.6.0, is aimed at Java developers so most of the information is on the Java Client section of the website.
 The next version will focus on running Scassandra standalone.
 
+###Release v0.6.0: 
+* Support for maps of any type
+* New method for priming types: CqlType (the ColumnTypes enum has been deprecated)
+* Prepared statement matcher now handles maps
  
 ###Release v0.5.0: 
 * Support for lists and sets of any type
@@ -46,16 +50,14 @@ The next version will focus on running Scassandra standalone.
 * Retrieval of a list of all the recorded executed prepared statements. If the prepared statement has been primed then the variable values are also visible.
 
 ###Feature backlog:
+* User defined types
+* Batches
 * Retrieval of a list of all prepared statements even if they haven't been executed.
-* Priming UDTs
-* Collections with a types other than text, ascii and varchar
 * Priming of tables rather than queries. Currently Scassandra does not parse the query and compares an executed query with all the primes query field. This would be very useful for priming the system keyspace as certain drivers expect the same thing to be in system.local but do slightly different queries to retireve it.
 
+For feature requests and bug reports raise an issue at the [Github issues page](https://github.com/scassandra/scassandra-server/issues)
 
-###Current limitations:
-* Binary protocol only. No planned support for thrift.
-
-For feature requests and bug reports send an email to: Christopher.batey@gmail.com
+Any questions ping me on twitter: @chbatey
 
 ### Authors 
 * Christopher Batey (@chbatey)
