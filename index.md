@@ -20,6 +20,10 @@ It is separated into two components:
 The pre 1.0 release of Scassandra, currently v0.6.0, is aimed at Java developers so most of the information is on the Java Client section of the website.
 The next version will focus on running Scassandra standalone.
 
+###Release v0.7.0: 
+* Support for priming specific errors e.g the number of replicas responded rather than just that it wsa a read/write timeout
+* Removed support for version 1.* of the Java DataStax driver due to classpath issues (you can still use 2.* with Cassandra 1.2 and it will work)
+
 ###Release v0.6.0: 
 * Support for maps of any type
 * New method for priming types: CqlType (the ColumnTypes enum has been deprecated)
