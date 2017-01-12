@@ -19,6 +19,9 @@ It is separated into two components:
 
 Scassandra, currently v1.1.0, is aimed at Java developers so most of the information is on the Java Client section of the website.  It also may be used as a standalone jar.
 
+###Release v1.1.1
+* [#181](https://github.com/scassandra/scassandra-server/issues/181) - Record 'USE <keyspace>' queries in activity log
+
 ###Release v1.1.0
 * [#171](https://github.com/scassandra/scassandra-server/pull/171) - Protocol 3 and 4 support.  Migrate cql-antlr into tree as submodule.
 
