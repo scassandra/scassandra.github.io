@@ -17,8 +17,53 @@ It is separated into two components:
 * [Java Client](http://scassandra-docs.readthedocs.org/en/latest/java/overview/): Java client for Scassandra. A thin Java wrapper around Scassandra that allows Java projects to depend on Scassandra via maven dependency and have a programmatic interface for starting/stopping and priming.
 * [Scassandra Server](http://scassandra-docs.readthedocs.org/en/latest/standalone/overview/): Stubbed Scassandra server. Only go here if you're insterested in running Stubbed Cassandra without a build tool such as maven or gradle. Implemented in Scala, can be run as a standalone server or depended on via the Java client. Doesn't have an embedded Cassandra, is a standalone implementation of the server side of the Cassandra native protocol. You can prime the server to return rows, read timeout and write timeout via a REST API.
 
-The pre 1.0 release of Scassandra, currently v0.10.0, is aimed at Java developers so most of the information is on the Java Client section of the website.
-The next version will focus on running Scassandra standalone.
+Scassandra, currently v1.1.0, is aimed at Java developers so most of the information is on the Java Client section of the website.  It also may be used as a standalone jar.
+
+###Release v1.1.1
+* [#181](https://github.com/scassandra/scassandra-server/issues/181) - Record 'USE <keyspace>' queries in activity log
+
+###Release v1.1.0
+* [#171](https://github.com/scassandra/scassandra-server/pull/171) - Protocol 3 and 4 support.  Migrate cql-antlr into tree as submodule.
+
+###Release v1.0.10
+* [#167](https://github.com/scassandra/scassandra-server/pull/167) - Provide CORS support to Scassandra endpoints
+
+###Release v1.0.9
+* [#157](https://github.com/scassandra/scassandra-server/pull/157) - Share ActorSystem between Scassandra instances
+
+###Release v1.0.8
+* [#155](https://github.com/scassandra/scassandra-server/pull/155) - Add getters for thens in multi-prime requests
+
+###Release v1.0.7
+* [#151](https://github.com/scassandra/scassandra-server/pull/151) - Allow priming of config using config object
+* [#154](https://github.com/scassandra/scassandra-server/pull/154) - Provide custom configuration for batch result
+
+###Release v1.0.6
+* [#149](https://github.com/scassandra/scassandra-server/pull/149) - Introduce alias for Then to avoid reserved word issues 
+* [#150](https://github.com/scassandra/scassandra-server/pull/150) - Handle invalid types with an informative error message
+
+###Release v1.0.5
+* [#148](https://github.com/scassandra/scassandra-server/pull/148) - Use shapeless 2
+
+###Release v1.0.4
+* [#147](https://github.com/scassandra/scassandra-server/pull/147) - Akka configuration fix
+
+###Release v1.0.3
+* [#141](https://github.com/scassandra/scassandra-server/pull/141) - Add ability to retrieve prepared multi primes
+
+###Release v1.0.2
+* [#140](https://github.com/scassandra/scassandra-server/pull/140) - Support for clearing prepared multi primes
+
+###Release v1.0.1
+* [#139](https://github.com/scassandra/scassandra-server/pull/139) - Delay support for batch statements
+
+###Release v1.0.0
+* Multi prime API.
+
+###Release v0.11.0
+* Log better error message for timeout binding to ports
+* [#112](https://github.com/scassandra/scassandra-server/issues/112) - Prime Result that closes connection
+* [#115](https://github.com/scassandra/scassandra-server/pull/115) - Archive standalone jar
 
 ###Release v0.10.0
 * Batch support
