@@ -147,5 +147,6 @@ Any questions ping me on twitter: @chbatey
 
 ### Authors 
 * Christopher Batey (@chbatey)
+* Andrew Tolbert
 * Dogan Narinc
 
