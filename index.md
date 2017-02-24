@@ -17,7 +17,12 @@ It is separated into two components:
 * [Java Client](http://scassandra-docs.readthedocs.org/en/latest/java/overview/): Java client for Scassandra. A thin Java wrapper around Scassandra that allows Java projects to depend on Scassandra via maven dependency and have a programmatic interface for starting/stopping and priming.
 * [Scassandra Server](http://scassandra-docs.readthedocs.org/en/latest/standalone/overview/): Stubbed Scassandra server. Only go here if you're insterested in running Stubbed Cassandra without a build tool such as maven or gradle. Implemented in Scala, can be run as a standalone server or depended on via the Java client. Doesn't have an embedded Cassandra, is a standalone implementation of the server side of the Cassandra native protocol. You can prime the server to return rows, read timeout and write timeout via a REST API.
 
-Scassandra, currently v1.1.0, is aimed at Java developers so most of the information is on the Java Client section of the website.  It also may be used as a standalone jar.
+Scassandra, currently v1.1.2, is aimed at Java developers so most of the information is on the Java Client section of the website.  It also may be used as a standalone jar.
+
+### Release v1.1.2
+
+* [#185](https://github.com/scassandra/scassandra-server/pull/185) - Add BatchExecution matcher
+* [#186](https://github.com/scassandra/scassandra-server/issues/186) - Add Serial Consistency Level and Timestamp to Activity Log
 
 ### Release v1.1.1
 
